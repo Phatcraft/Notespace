@@ -13,6 +13,10 @@ load_dotenv()
 def home():
   return render_template("home.html")
 
+# Login route
+@server.route("/login")
+def login():
+  return render_template("login.html")
 
 # Run server
 if __name__ == "__main__":
