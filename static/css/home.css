@@ -1,0 +1,122 @@
+/* Variables */
+:root{
+  --primary: steelblue;
+  --primary-hide: rgb(52, 83, 109);
+  --choose: rgb(116, 157, 190);
+}
+
+
+/* Page body */
+body{
+  background-color: var(--primary);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* Navigation bar */
+nav{
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+nav .nav-btn-zone{
+  display: grid;
+  place-content: center;
+}
+nav #nav-button{
+  font-size: 25px;
+  border: 0;
+  background-color: transparent; 
+  font-weight: 900;
+}
+main .icon-zone h1{
+  padding: 10px 20px;
+}
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main .show{
+  display: flex;
+  flex-direction: column;
+}
+main .hide{
+  display: none;
+}
+main #left-bar{
+  background-color: white;
+  width: 250px;
+  height: 70vh;
+  padding: 10px 0px;
+  border-bottom-right-radius: 20px;
+}
+main #left-bar a{
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+main #left-bar a i{
+  padding: 0px 5px;
+}
+main #left-bar .choose{
+  background-color: var(--primary);
+  color: white;
+}
+main #left-bar a:hover{
+  background-color: var(--choose);
+  color: white;
+}
+
+
+/* Main page */
+main .main-show{
+  display: block;
+}
+main .main-hide{
+  display: none;
+}
+main #main-page{
+  width: 100%;
+}
+main #main-page .welcome{
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+/* About Notespace */
+.about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px 0px;
+}
+.about h1{
+  color: white;
+}
+.about .about-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .about-list .about-card{
+  background-color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 400px;
+}
