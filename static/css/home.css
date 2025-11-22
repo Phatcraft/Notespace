@@ -6,6 +6,17 @@
 }
 
 
+/* Animations */
+@keyframes nav_show {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+
 /* Page body */
 body{
   background-color: var(--primary);
@@ -49,6 +60,7 @@ main{
   display: flex;
 }
 main .show{
+  animation: nav_show 0.2s;
   display: flex;
   flex-direction: column;
 }
@@ -103,7 +115,7 @@ main #main-page .welcome{
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 100px 0px;
+  margin: 200px 0px;
 }
 .about h1{
   color: white;
@@ -119,4 +131,25 @@ main #main-page .welcome{
   margin: 5px;
   border-radius: 10px;
   width: 400px;
+  transition: 0.2s;
+}
+.about .about-list .about-card:hover{
+  transform: scale(101%);
+  background-color: var(--choose);
+  color: white;
+  transition: 0.2s;
+}
+
+
+/* Footer */
+footer{
+  background-color: white;
+  padding: 20px;
+  margin-top: 200px;
+}
+footer h2{
+  margin: 10px;
+}
+footer p{
+  margin: 0px 15px;
 }
