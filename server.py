@@ -1,7 +1,12 @@
+import os
 from flask import Flask
+from dotenv import load_dotenv
 
 # Create Flask server
 server = Flask(__name__)
+
+# Load enviroment
+load_dotenv()
 
 # Home route
 @server.route("/")
@@ -12,7 +17,7 @@ def home():
 # Run server
 if __name__ == "__main__":
   server.run(
-    host="0.0.0.0",
-    port=3000,
+    host=os.getenv("SERVER_HOST"),
+    port=os.getenv("SERVER_PORT"),
     debug=True
   )
