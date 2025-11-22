@@ -11,12 +11,12 @@ Bạn cũng có thể xem các public note của những người khác.
   
   + **Setup môi trường python ảo**
     ````bash
-    python -m venv venv
+    python -m venv .venv
     ````
   
   + **Chạy môi trường ảo (Windows)**
     ````bash
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ````
 
   + **Chạy Notespace server**
