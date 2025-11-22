@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 from dotenv import load_dotenv
 
 # Create Flask server
@@ -11,7 +11,7 @@ load_dotenv()
 # Home route
 @server.route("/")
 def home():
-  return "Home page"
+  return render_template("home.html")
 
 
 # Run server
