@@ -19,6 +19,11 @@ Bạn cũng có thể xem các public note của những người khác.
     .venv\Scripts\activate
     ````
 
+  + **Cài đặt các module cần thiết**
+    ````bash
+    pip install -r requirements.txt
+    ````
+
   + **Chạy Notespace server**
     ````bash
     python server.py
