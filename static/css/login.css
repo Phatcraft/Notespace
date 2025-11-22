@@ -52,7 +52,7 @@ nav #nav-button{
   font-weight: 900;
 }
 nav .icon-zone h1{
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 main{
   width: 100%;
@@ -94,62 +94,69 @@ main #left-bar a:hover{
 
 /* Main page */
 main .main-show{
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 main .main-hide{
   display: none;
 }
 main #main-page{
   width: 100%;
+  padding: 40px 0px;
 }
-main #main-page .welcome{
+main #main-page form{
   background-color: white;
-  margin: 10px;
-  padding: 20px;
-}
-
-
-/* About Notespace */
-.about{
-  width: 100%;
+  padding: 40px 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 200px 0px;
+  border-radius: 20px;
 }
-.about h1{
-  color: white;
-}
-.about .about-list{
+form .input{
+  margin: 5px 10px;
+  padding: 5px 0px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.about .about-list .about-card{
-  background-color: white;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 10px;
-  width: 400px;
-  transition: 0.2s;
-}
-.about .about-list .about-card:hover{
-  transform: scale(101%);
-  background-color: var(--choose);
+form .input label{
+  padding: 5px 10px;
+  background-color: var(--primary);
   color: white;
-  transition: 0.2s;
+  border: 1px solid var(--primary);
+  border-radius: 10px 0px 0px 10px;
+}
+form .input input{
+  width: 180px;
+  margin: 0px;
+  padding: 10px 5px;
+  border: 0px;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-left: 0;
+  border-radius: 0px 10px 10px 0px;
 }
 
-
-/* Footer */
-footer{
-  background-color: white;
-  padding: 20px;
-  margin-top: 200px;
+form .submit{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  margin-bottom: 0;
 }
-footer h2{
+form .submit input[type="submit"]{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border: 0;
+  color: white;
+  background-color: red;
+  width: fit-content;
+  padding: 10px 40px;
   margin: 10px;
+  border-radius: 20px;
 }
-footer p{
-  margin: 0px 15px;
+form p{
+  margin: 3px;
+  font-size: 13px;
+}
+form p a{
+  color: black;
 }
