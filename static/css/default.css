@@ -1,0 +1,101 @@
+:root{
+  --primary: steelblue;
+}
+
+/* Body */
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body-hide{
+  background-color: #e2e2e2bd;
+}
+.body-show{
+  background-color: white;
+}
+
+/* Nav bar */
+nav{
+  display: flex;
+  background-color: var(--primary);
+  color: white;
+}
+nav .button{
+  display: grid;
+  place-content: center;
+  padding: 0px 20px;
+}
+nav .button #nav-btn{
+  font-size: 25px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav h1{
+  margin: 20px 10px;
+}
+
+/* Main page */
+.main-page{
+  display: flex;
+}
+/* Nav animation */
+@keyframes navShow {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes navHide {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+/* Left navigation bar */
+aside,
+.nav-show{
+  width: 200px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  background-color: var(--primary);
+  border-radius: 0px 0px 30px 0px;
+}
+.nav-show{
+  animation: navShow 0.3s;
+}
+.nav-hide{
+  animation: navHide 0.3s;
+  width: 0;
+}
+aside a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 20px;
+}
+aside a span{
+  margin: 0px 10px;
+}
+aside a:hover{
+  background-color: #e4e4e4;
+  color: black;
+}
+aside .choose,
+aside .choose:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Main */
+main{
+  width: 100%;
+}

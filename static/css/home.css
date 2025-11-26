@@ -1,0 +1,38 @@
+@import url("./default.css");
+
+
+.welcome{
+  padding: 40px;
+}
+.welcome a{
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.about{
+  text-align: center;
+  margin: 50px 0px;
+}
+.about h2{
+  margin: 30px 0px;
+}
+.about .about-list{
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .about-list .about-block{
+  background-color: var(--primary);
+  color: white;
+  padding: 40px 20px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 25px;
+}
+.about .about-list .about-block h3{
+  margin: 10px;
+}
